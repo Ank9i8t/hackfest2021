@@ -24,11 +24,6 @@ def isSubsetSum(set, n, sum):
                     subset[i][j] = (subset[i-1][j] or 
                                    subset[i - 1][j-set[i-1]])
       
-        # uncomment this code to print table 
-        # for i in range(n + 1):
-        # for j in range(sum + 1):
-        # print (subset[i][j], end =" ")
-        # print()
     return subset[n][sum]
           
 # Driver program to test above function
